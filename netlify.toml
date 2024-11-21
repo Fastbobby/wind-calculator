@@ -1,1 +1,10 @@
+[build]
+  command = "npm run build"  # Your build command
+  publish = "dist"           # Your publish directory; make sure this matches the output directory of your build
+
+[context.production]
+  command = "npm run build"  # Ensure the correct build command runs during production deploys
+
+[build.environment]
+  NODE_VERSION = "16.15.1"   # Specify your Node.js version; replace with your local version if different
 
