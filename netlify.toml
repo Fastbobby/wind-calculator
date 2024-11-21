@@ -4,7 +4,8 @@
 
 # Define environment variables
 [build.environment]
-  NODE_VERSION = "16.15.1" # Specify your Node.js version; replace with your local version if different
+VITE_GOOGLE_MAPS_API_KEY=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg
+VITE_MAP_ID=8e0a97af9386fef
 
 [context.production]
   command = "npm run build" # Ensure the correct build command runs during production deploys
