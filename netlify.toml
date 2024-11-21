@@ -1,11 +1,11 @@
 [build]
-  command = "npm run build || echo 'Build failed'"
+  command = "npm run build"
   publish = "dist"
 
-# Define environment variables
 [build.environment]
-VITE_GOOGLE_MAPS_API_KEY=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg
-VITE_MAP_ID=8e0a97af9386fef
+  VITE_GOOGLE_MAPS_API_KEY = "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg"  # Wrap in quotes
+  VITE_MAP_ID = "8e0a97af9386fef"  # Wrap in quotes
+
 
 [context.production]
   command = "npm run build" # Ensure the correct build command runs during production deploys
