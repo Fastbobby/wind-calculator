@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "noUnusedLocals": false,
+    "noEmitOnError": false,
     "noUnusedParameters": false,
     "target": "ES2020",
     "useDefineForClassFields": true,
